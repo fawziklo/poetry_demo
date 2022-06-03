@@ -15,7 +15,7 @@ pre-install:
 	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
 install:
-	$(CMD) install
+	poetry install
 
 format:
 	$(CMD) python -m black --version
