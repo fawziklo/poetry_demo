@@ -12,7 +12,7 @@ info:
 	@echo "############################################################################################################"
 
 pre-install:
-	(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python -
+	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
 install:
 	$(CMD) install
