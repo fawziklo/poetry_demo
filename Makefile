@@ -2,12 +2,15 @@ CMD:= poetry run
 
 info:
 	@echo "############################################################################################################"
-	@echo "First create a venv environment & activate it, next run make all"
-	@echo "make all is a chain of commands: install lint format test"
-	@echo "make install : install all dependencies of requirements.txt"
+	@echo "If you're in local, please make sure that you have poetry installed"
+	@echo "make pre-install & install are used in CI"
+	@echo "make all-dev is a chain of commands: type format lint test"
+	@echo "make install : install all dependencies from pyproject.toml"
+	@echo "make type: apply type checking"
 	@echo "make format: apply black formatting"
 	@echo "make lint: apply pylint linting"
 	@echo "make test: apply pytest testing & code coverage"
+	@echo "make test-cov generate test summary as html report"
 	@echo "make clean: clean up by deletion venv file from the project"
 	@echo "############################################################################################################"
 
